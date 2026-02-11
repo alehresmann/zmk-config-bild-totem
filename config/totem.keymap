@@ -57,11 +57,10 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
-/* Combos, leader key sequences, mouse emulation */
+/* Combos, leader key sequences */
 
 #include "combos.dtsi" // Must be sourced after HRM-combo hack.
 #include "leader.dtsi"
-#include "mouse.dtsi"
 
 /* Nav cluster */
 
@@ -119,13 +118,6 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
               tapping-term-ms = <200>;)
-
-// Smart-mouse, requires tri-state module.
-ZMK_TRI_STATE(
-    smart_mouse, bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
-    ignored-key-positions =
-        <LT1 LT2 LH0 LH1 RT1 RT2 RT3 RM0 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1>;
-    ignored-layers = <MOUSE NAV FN>;)
 
 /* Custom behaviors */
 
@@ -267,14 +259,3 @@ ZMK_BASE_LAYER(Fun,
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
 
-ZMK_BASE_LAYER(Sys,
-//              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  XXX           XXX           XXX           XXX           XXX         ,   XXX           XXX           XXX           XXX           XXX         ,
-//              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  ___           ___           ___           ___           XXX         ,   XXX           U_MS_L        U_MS_D         U_MS_R       U_WH_R      ,
-//╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╮
-    XXX           XXX           ___           ___           ___           XXX         ,   XXX           &mkp LCLK     &mkp MCLK      &mkp RCLK    XXX           XXX         ,
-//╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                              XXX           ___           ___         ,   U_WH_U        U_WH_D        XXX
-//                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
-)
