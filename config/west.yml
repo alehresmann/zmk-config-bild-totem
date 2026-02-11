@@ -8,21 +8,15 @@ manifest:
       url-base: https://github.com/BildermanKawasaki
     - name: urob
       url-base: https://github.com/urob
-    - name: efogdev
-      url-base: https://github.com/efogdev
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main
       import: app/west.yml
 
       # device and drivenr modules
     - name: zmk-keyboard-totem
       remote: BildermanKawasaki 
-    - name: zmk-device-adeptble-trackball
-      remote: BildermanKawasaki 
-    - name: zmk-pmw3610-driver
-      remote: efogdev
 
       # urob modules
     - name: zmk-adaptive-key
