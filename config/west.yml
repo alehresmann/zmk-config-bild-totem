@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
       import: app/west.yml
 
       # device and drivenr modules
@@ -21,21 +21,27 @@ manifest:
       # urob modules
     - name: zmk-adaptive-key
       remote: urob
+      revision: 7d31d2b958bbe8503bca38ffe9eaae82bd43a104
       path: modules/zmk/adaptive-key
     - name: zmk-auto-layer
       remote: urob
+      revision: cf52cce16cf798b116b380fc13dfd36b3a998de6
       path: modules/zmk/auto-layer
     - name: zmk-helpers
       remote: urob
+      revision: ccc1da88d5a52c6ecf67a0babaae6c6c83796f15
       path: modules/zmk/helpers
     - name: zmk-leader-key
       remote: urob
+      revision: 1f8c36830eb5901eebca4988bc1255b89fa3cc45
       path: modules/zmk/leader-key
     - name: zmk-tri-state
       remote: urob
+      revision: 9b7e1ac25f6dc733f62989fd064c6c5927e5e469
       path: modules/zmk/tri-state
     - name: zmk-unicode
       remote: urob
+      revision: 3e8ca744e5c3b6f430b3713f3e45b806ce89be7b
       path: modules/zmk/unicode
   self:
     path: config
