@@ -13,6 +13,10 @@
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
+/* Combos - both hands */
+ZMK_COMBO(cword, &caps_word,   LM1 RM1, A1 A2,  COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(clock, &kp CAPS,     LT3 RT3, A1 A2,  COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
 /* Vertical combos - left hand */
 ZMK_COMBO(bgrl,  &bigram_rl,   LT3 LM3, A1,     COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(bghn,  &bigram_hn,   LT2 LM2, A1,     COMBO_TERM_FAST, COMBO_IDLE_FAST)
