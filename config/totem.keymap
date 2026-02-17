@@ -187,7 +187,7 @@ ZMK_MACRO(leader_sft, bindings = <&sk LSHFT &leader>;)
 
 // Bigram macros
 ZMK_MACRO(bigram_rl, bindings = <&kp R &kp L>;)
-ZMK_MACRO(bigram_hn, bindings = <&kp H &kp N>;)
+ZMK_MACRO(bigram_ph, bindings = <&kp P &kp H>;)
 ZMK_MACRO(bigram_dt, bindings = <&kp D &kp T>;)
 ZMK_MACRO(bigram_cy, bindings = <&kp C &kp Y>;)
 ZMK_MACRO(bigram_eo, bindings = <&kp E &kp O>;)
@@ -197,7 +197,7 @@ ZMK_MACRO(bigram_nb, bindings = <&kp N &kp B>;)
 ZMK_MACRO(bigram_mt, bindings = <&kp M &kp T>;)
 ZMK_MACRO(bigram_gy, bindings = <&kp G &kp Y>;)
 ZMK_MACRO(bigram_oe, bindings = <&kp O &kp E>;)
-ZMK_MACRO(bigram_iu, bindings = <&kp I &kp U>;)
+ZMK_MACRO(bigram_ff, bindings = <&kp F &kp F>;)
 
 
 // Misc aliases. [TODO: clean up]
