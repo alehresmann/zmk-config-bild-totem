@@ -192,12 +192,12 @@ ZMK_MACRO(bigram_dt, bindings = <&kp D &kp T>;)
 ZMK_MACRO(bigram_cy, bindings = <&kp C &kp Y>;)
 ZMK_MACRO(bigram_eo, bindings = <&kp E &kp O>;)
 ZMK_MACRO(bigram_ui, bindings = <&kp U &kp I>;)
-ZMK_MACRO(bigram_lr, bindings = <&kp L &kp R>;)
+ZMK_MACRO(bigram_ff, bindings = <&kp F &kp F>;)
 ZMK_MACRO(bigram_nb, bindings = <&kp N &kp B>;)
 ZMK_MACRO(bigram_mt, bindings = <&kp M &kp T>;)
 ZMK_MACRO(bigram_gy, bindings = <&kp G &kp Y>;)
 ZMK_MACRO(bigram_oe, bindings = <&kp O &kp E>;)
-ZMK_MACRO(bigram_ff, bindings = <&kp F &kp F>;)
+ZMK_MACRO(bigram_iu, bindings = <&kp I &kp U>;)
 
 
 // Misc aliases. [TODO: clean up]
