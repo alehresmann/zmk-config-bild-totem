@@ -92,22 +92,6 @@ ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 
 /* Nav cluster */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Mask CTRL on left/right hold to avoid accidental jumps to start/end of doc.
 #define MASK_MODS(NAME, MODS, BINDING)                                         \
   ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <BINDING>; mods = <MODS>;)
@@ -229,7 +213,7 @@ ZMK_BASE_LAYER(Base,
 //╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╮
     XXX           &qexcl        &kp Z         &kp SQT       &dot_morph    &kp X       ,   &kp V         &kp P         &kp M          &kp W        &kp J         XXX         ,
 //╰─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯
-                                              XXX           &lt FUN SQT   &lt_spc SYM 0 , &sl A2        SMART_NUM     XXX  
+                                              XXX           &lt FUN SQT   &lt_spc SYM 0 , SMART_NUM     MAGIC_SHIFT     XXX  
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
 
