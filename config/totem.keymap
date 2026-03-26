@@ -13,7 +13,6 @@
 #define NUMNAV 2
 #define SYM 3
 #define FUN 4
-#define SYS 5
 
 #define DEF 0
 #define NAV 1
