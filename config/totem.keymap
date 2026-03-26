@@ -8,12 +8,21 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define A1 0
+#define A2 1
+#define NUMNAV 2
+#define SYM 3
+#define FUN 4
+#define SYS 5
+
 #define DEF 0
 #define NAV 1
 #define FN 2
 #define NUM 3
 #define SYS 4
 #define MOUSE 5
+
+
 
 
 #define XXX &none
@@ -137,11 +146,11 @@ ZMK_ADAPTIVE_KEY(
 };
 
 // Tap: num-word | double-tap: sticky num-layer | Hold: num-layer.
-#define SMART_NUM &smart_num NUMNAV 0
+#define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUMNAV>, <&sl NUMNAV>;
-              tapping-term-ms = <200>;)
+ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
+              tapping-term-ms = <200>;
 
 /* Custom behaviors */
 
@@ -228,8 +237,7 @@ ZMK_BASE_LAYER(Base,
 //╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╮
     XXX           &qexcl        &kp Z         &kp SQT       &dot_morph    &kp X       ,   &kp V         &kp P         &kp M          &kp W        &kp J         XXX         ,
 //╰─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯
-                                                XXX           &lt FUN SQT   &lt_spc SYM 0 , &sl A2        SMART_NUM     XXX  
-//                                              XXX           &lt_spc NAV 0 &lt FN RET  ,   SMART_NUM     MAGIC_SHIFT   XXX
+                                              XXX           &lt FUN SQT   &lt_spc SYM 0 , &sl A2        SMART_NUM     XXX  
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 )
 
