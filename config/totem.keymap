@@ -15,6 +15,8 @@
 #define FUN 4
 #define SYS 5
 
+#define NUM 3
+
 #define XXX &none
 #define ___ &trans
 
