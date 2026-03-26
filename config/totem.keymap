@@ -18,6 +18,10 @@
 #define XXX &none
 #define ___ &trans
 
+#define _BT_SEL_KEYS_                                                        \
+    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR &bt BT_CLR_ALL
+
+
 /* Global defaults */
 
 #define QUICK_TAP_MS 175
