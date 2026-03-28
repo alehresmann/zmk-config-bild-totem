@@ -8,16 +8,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define A1 0
-#define A2 1
-#define NUMNAV 2
-#define SYM 3
-#define FUN 4
-#define SYS 5
-
 #define NAV 1
 #define FN 2
 #define NUM 3
+#define SYS 4
+#define MOUSE 5
 
 #define XXX &none
 #define ___ &trans
