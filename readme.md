@@ -2,9 +2,15 @@ This is a ZMK firmware for a [TOTEM keyboard](https://github.com/GEIGEIGEIST/TOT
 
 I re-added most of all the shortcuts from urob. I also use anymak:end, with b and v switched.
 
-Finally, I stole the symbol layer from here: https://github.com/ndonkersloot/zmk-config/tree/main
+Finally, I stole the symbol layer from here: [https://github.com/ndonkersloot/zmk-config/tree/main](https://github.com/ndonkersloot/zmk-config/tree/main).
+
+
+![svg of the keyboard](./my_keymap.svg)
+<img src="./my_keymap.svg">
 
 I'll see whether or not it works well.
+
+here is the visual keymap, generated with https://keymap-drawer.streamlit.app/
 
 I'm looking to add a dongle. I bought a prospector kit, but I burnt the chip while soldering...... look into this with one of my nicenanos?
 
